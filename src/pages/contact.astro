@@ -1,0 +1,92 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+
+const mapQuery = encodeURIComponent(`${SITE.company} ${SITE.address}`);
+const mapSrc = `https://maps.google.com/maps?q=${mapQuery}&z=16&hl=th&output=embed`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ContactPage',
+      name: `ติดต่อ ${SITE.name}`,
+      url: `${SITE.url}/contact`,
+    },
+    {
+      '@type': 'LocalBusiness',
+      name: SITE.name,
+      legalName: SITE.company,
+      telephone: '+66' + SITE.phone.slice(1),
+      url: SITE.url,
+      openingHours: 'Mo-Su 07:00-19:00',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '111/39 ถ.ประชาสามัคคี ม.5 ต.รัษฎา',
+        addressLocality: 'อ.เมือง',
+        addressRegion: 'ภูเก็ต',
+        postalCode: '83000',
+        addressCountry: 'TH',
+      },
+      areaServed: SITE.serviceAreas.map((a) => ({ '@type': 'Place', name: a })),
+      sameAs: [SITE.facebook],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'ติดต่อ', item: `${SITE.url}/contact` },
+      ],
+    },
+  ],
+};
+---
+
+<Base
+  title="ติดต่อภูเก็ตนักยก - โทร LINE Facebook | เช่าเครน แบคโฮ ภูเก็ต"
+  description={`ติดต่อภูเก็ตนักยก โทร ${SITE.phoneDisplay} หรือ LINE ${SITE.lineId} เปิดบริการ${SITE.hours} ให้บริการทั่วจังหวัดภูเก็ตและพื้นที่ใกล้เคียง`}
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>ติดต่อเรา</h1>
+      <p>โทรหรือทัก LINE ได้{SITE.hours}</p>
+    </div>
+  </section>
+
+  <section class="section contact-grid">
+    <div class="stack12" style="gap:24px">
+      <h2 style="font-size:22px;margin:0">ช่องทางติดต่อ {SITE.name}</h2>
+      <div class="contact-cards">
+        <a href={`tel:${SITE.phone}`} class="contact-card tel u1">
+          <span class="icon">📞</span>
+          <span><span class="k">โทรศัพท์</span><span class="v">{SITE.phoneDisplay}</span></span>
+        </a>
+        <a href={SITE.lineUrl} class="contact-card line u2">
+          <span class="icon">💬</span>
+          <span><span class="k">LINE</span><span class="v">{SITE.lineId}</span></span>
+        </a>
+        <a href={SITE.facebook} class="contact-card fb u3">
+          <span class="icon">👍</span>
+          <span><span class="k">Facebook</span><span class="v">{SITE.name}</span></span>
+        </a>
+      </div>
+      <div class="contact-info">
+        <div class="head">ที่อยู่</div>
+        {SITE.company}<br />{SITE.address}
+      </div>
+      <div class="contact-info">
+        <div class="head">พื้นที่ให้บริการ</div>
+        {SITE.area}
+      </div>
+    </div>
+    <iframe
+      class="contact-map"
+      src={mapSrc}
+      title={`แผนที่ ${SITE.company}`}
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </section>
+</Base>

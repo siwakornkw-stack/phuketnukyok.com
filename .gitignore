@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+image-originals/
+
+.vercel
+.claude/
+
+# transient research/audit data dumps
+kw-research.json
+seo-audit-data.json
+_ac*.txt

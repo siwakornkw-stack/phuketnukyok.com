@@ -1,0 +1,65 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../data/site';
+import { services } from '../../data/services';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: 'บริการทั้งหมด',
+      url: `${SITE.url}/services`,
+      about: services.map((s) => s.title).join(', '),
+    },
+    {
+      '@type': 'ItemList',
+      itemListElement: services.map((s, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: s.title,
+        url: `${SITE.url}/services/${s.slug}`,
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'บริการ', item: `${SITE.url}/services` },
+      ],
+    },
+  ],
+};
+---
+
+<Base
+  title="บริการทั้งหมด - เช่าเครน แบคโฮ ตู้คอนเทนเนอร์ รับรื้อถอน | ภูเก็ตนักยก"
+  description="รวมบริการภูเก็ตนักยก เช่าเครน รถเฮี๊ยบ แบคโฮ ตู้คอนเทนเนอร์ จำหน่ายหิน ดิน ทราย และรับรื้อถอน ทั่วภูเก็ต ประเมินหน้างานฟรี"
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>บริการทั้งหมด</h1>
+      <p>เครื่องจักรและวัสดุก่อสร้าง พร้อมส่งทั่วภูเก็ต</p>
+    </div>
+  </section>
+
+  <section class="section stack">
+    {services.map((s, i) => (
+      <div class={i === services.length - 1 ? 'svc-row last' : 'svc-row'}>
+        <img src={s.img} alt={s.imgAlt} loading="lazy" />
+        <div class="stack12">
+          <h2><a href={`/services/${s.slug}`}>{s.title}</a></h2>
+          <p>{s.desc}</p>
+          <ul>
+            {s.points.map((p) => <li>{p}</li>)}
+          </ul>
+          <div class="row-actions">
+            <a class="btn btn-amber btn-sm" href={`/services/${s.slug}`}>ดูรายละเอียด</a>
+            <a class="btn btn-line btn-sm" href={`tel:${SITE.phone}`}>📞 สอบถามราคา</a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </section>
+</Base>

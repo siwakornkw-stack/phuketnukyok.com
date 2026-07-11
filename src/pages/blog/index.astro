@@ -1,0 +1,69 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../data/site';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const fmt = (d) => d.toLocaleDateString('th-TH', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Blog',
+      name: 'บทความ - ภูเก็ตนักยก',
+      url: `${SITE.url}/blog`,
+      blogPost: posts.map((p) => ({
+        '@type': 'BlogPosting',
+        headline: p.data.title,
+        url: `${SITE.url}/blog/${p.id}`,
+        datePublished: p.data.pubDate.toISOString(),
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'บทความ', item: `${SITE.url}/blog` },
+      ],
+    },
+  ],
+};
+---
+
+<Base
+  title="บทความ - ความรู้เรื่องเครน แบคโฮ ตู้คอนเทนเนอร์ วัสดุก่อสร้าง | ภูเก็ตนักยก"
+  description="รวมบทความความรู้จากภูเก็ตนักยก การเช่าเครน แบคโฮ รถ 6 ล้อติดเครน ตู้คอนเทนเนอร์ และการเลือกหิน ดิน ทราย สำหรับงานก่อสร้างในภูเก็ต"
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>บทความ</h1>
+      <p>ความรู้เรื่องเครื่องจักร งานยก งานถม และวัสดุก่อสร้าง</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="post-list">
+      {posts.map((p) => (
+        <a class="post-card" href={`/blog/${p.id}`}>
+          <div class="post-thumb">
+            {p.data.image
+              ? <img src={p.data.image} alt={p.data.title} loading="lazy" />
+              : <span class="post-thumb-ph">📄</span>}
+          </div>
+          <div class="post-body">
+            {p.data.category && <span class="post-cat">{p.data.category}</span>}
+            <h2>{p.data.title}</h2>
+            <div class="post-meta">
+              <time datetime={p.data.pubDate.toISOString()}>{fmt(p.data.pubDate)}</time> · {p.data.author}
+            </div>
+            <p>{p.data.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,83 @@
+# Sveltia CMS config — จัดการบทความ blog
+# Production: ตั้ง repo ให้ตรง GitHub repo จริง แล้ว deploy (ดู README)
+backend:
+  name: github
+  repo: OWNER/REPO # << แก้เป็น your-github-user/phuketnukyok.com หลังสร้าง repo
+  branch: main
+
+# ใช้เขียนบทความบนเครื่อง (npx @sveltia/cms-proxy-server + npm run dev แล้วเปิด /admin)
+local_backend: true
+
+media_folder: public/images/blog
+public_folder: /images/blog
+
+collections:
+  - name: blog
+    label: บทความ
+    label_singular: บทความ
+    description: เพิ่ม/แก้บทความในเว็บ
+    folder: src/content/blog
+    create: true
+    delete: true
+    extension: md
+    format: frontmatter
+    slug: '{{fields.slug}}'
+    sortable_fields: [pubDate, title]
+    view_groups:
+      - { label: หมวดหมู่, field: category }
+    fields:
+      - { name: title, label: หัวข้อบทความ, widget: string }
+      - {
+          name: slug,
+          label: 'URL (อังกฤษ เช่น rent-crane-tips)',
+          widget: string,
+          hint: 'ตัวพิมพ์เล็กภาษาอังกฤษ คั่นด้วย - จะกลายเป็น /blog/ชื่อนี้',
+          pattern: ['^[a-z0-9-]+$', 'ใช้ a-z 0-9 และ - เท่านั้น'],
+        }
+      - {
+          name: draft,
+          label: บันทึกเป็นฉบับร่าง (ยังไม่เผยแพร่),
+          widget: boolean,
+          default: false,
+        }
+      - {
+          name: image,
+          label: รูปหน้าปก (featured image),
+          widget: image,
+          required: false,
+          hint: อัปโหลดรูปหน้าปกบทความ แสดงในหน้ารวมและหัวบทความ,
+        }
+      - {
+          name: category,
+          label: หมวดหมู่,
+          widget: select,
+          default: ทั่วไป,
+          options: [เช่าเครน, รถเฮี๊ยบ, แบคโฮ, ตู้คอนเทนเนอร์, หิน ดิน ทราย, รับรื้อถอน, ทั่วไป],
+        }
+      - {
+          name: tags,
+          label: แท็ก,
+          widget: list,
+          required: false,
+          hint: กด Enter เพื่อเพิ่มแต่ละแท็ก,
+        }
+      - { name: author, label: ผู้เขียน, widget: string, default: ภูเก็ตนักยก }
+      - { name: description, label: คำอธิบายสั้น (SEO 120-160 ตัวอักษร), widget: text }
+      - {
+          name: pubDate,
+          label: วันที่เผยแพร่,
+          widget: datetime,
+          date_format: 'YYYY-MM-DD',
+          time_format: false,
+          format: 'YYYY-MM-DD',
+        }
+      - {
+          name: updatedDate,
+          label: วันที่แก้ไขล่าสุด (ถ้ามี),
+          widget: datetime,
+          required: false,
+          date_format: 'YYYY-MM-DD',
+          time_format: false,
+          format: 'YYYY-MM-DD',
+        }
+      - { name: body, label: เนื้อหา, widget: markdown }

@@ -1,0 +1,108 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../data/site';
+import { services } from '../../data/services';
+
+export function getStaticPaths() {
+  return services.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props;
+const related = services.filter((x) => x.slug !== s.slug);
+const pageUrl = `${SITE.url}/services/${s.slug}`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      name: s.h1,
+      serviceType: s.title,
+      description: s.metaDesc,
+      areaServed: s.nationwide ? 'ประเทศไทย' : SITE.serviceAreas.map((a) => ({ '@type': 'Place', name: a })),
+      provider: {
+        '@type': 'LocalBusiness',
+        name: SITE.name,
+        legalName: SITE.company,
+        telephone: '+66' + SITE.phone.slice(1),
+        url: SITE.url,
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: s.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'บริการ', item: `${SITE.url}/services` },
+        { '@type': 'ListItem', position: 3, name: s.title, item: pageUrl },
+      ],
+    },
+  ],
+};
+---
+
+<Base title={s.seoTitle} description={s.metaDesc} jsonLd={jsonLd}>
+  <section class="page-hero">
+    <div class="container">
+      <h1>{s.h1}</h1>
+      <p>{s.shortDesc}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="svc-row last">
+      <img src={s.img} alt={s.imgAlt} />
+      <div class="stack12">
+        <p>{s.desc}</p>
+        <ul>
+          {s.points.map((p) => <li>{p}</li>)}
+        </ul>
+        <div class="row-actions">
+          <a class="btn btn-amber btn-sm" href={`tel:${SITE.phone}`}>📞 โทรสอบถามราคา</a>
+          <a class="btn btn-line btn-sm" href={SITE.lineUrl}>💬 ทัก LINE</a>
+        </div>
+        <p class="svc-area">
+          <strong>พื้นที่ให้บริการ:</strong>{' '}
+          {s.nationwide ? 'รับงานทั่วประเทศ — ' : ''}{SITE.serviceAreas.join(' · ')}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-section" style="padding-top:0">
+    <h2>คำถามที่พบบ่อย — {s.title}</h2>
+    <div class="faq">
+      {s.faqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <h2 style="font-size:22px;margin:0 0 12px">บริการอื่นของเรา</h2>
+    <ul style="margin:0;padding-left:20px;line-height:2">
+      {related.map((r) => (
+        <li><a href={`/services/${r.slug}`}>{r.title}</a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>สนใจ{s.title}{s.nationwide ? ' รับงานทั่วประเทศ' : ' ในภูเก็ต'}?</h2>
+    <p>โทรปรึกษาฟรี ประเมินหน้างาน เสนอราคาไว</p>
+    <div class="actions">
+      <a href={`tel:${SITE.phone}`} class="btn btn-amber">📞 {SITE.phoneDisplay}</a>
+      <a href={SITE.lineUrl} class="btn btn-ghost-line">💬 LINE: {SITE.lineId}</a>
+    </div>
+  </section>
+</Base>

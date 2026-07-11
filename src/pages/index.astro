@@ -1,0 +1,177 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+import { services } from '../data/services';
+
+const stats = [
+  { n: 10, suffix: '+', label: 'ปีประสบการณ์' },
+  { n: services.length, suffix: '', label: 'บริการครบวงจร' },
+  { n: SITE.serviceAreas.length, suffix: '', label: 'พื้นที่ให้บริการ' },
+  { n: 100, suffix: '+', label: 'ผลงานจริง' },
+];
+
+const cards = [
+  ...services.map((s) => ({
+    title: s.title,
+    desc: s.shortDesc,
+    img: s.img,
+    alt: s.imgAlt,
+    href: `/services/${s.slug}`,
+  })),
+  {
+    title: 'งานเหมาพิเศษ',
+    desc: 'รับปรึกษางานยก งานย้าย งานถมที่แบบเหมา ประเมินหน้างานฟรี',
+    img: '/images/custom.jpg',
+    alt: 'งานเหมาพิเศษ ประเมินหน้างานฟรี',
+    href: '/contact',
+  },
+];
+
+const trust = [
+  'ประสบการณ์กว่า 10 ปี',
+  'เครื่องจักรพร้อมใช้ ตรวจเช็คสม่ำเสมอ',
+  'คนขับมืออาชีพ มีใบอนุญาต',
+  'ราคายุติธรรม เสนอราคาไว',
+];
+
+const whyUs = [
+  { icon: '🏗️', title: 'เครื่องจักรครบ', desc: 'เครน รถบรรทุก แบคโฮ พร้อมออกงานในที่เดียว ไม่ต้องติดต่อหลายเจ้า' },
+  { icon: '👷', title: 'ทีมงานชำนาญ', desc: 'คนขับและทีมยกมีประสบการณ์ ปลอดภัยตามมาตรฐาน' },
+  { icon: '⚡', title: 'ตอบไว ออกงานไว', desc: 'ทัก LINE หรือโทร ประเมินราคาไว นัดคิวงานได้ทุกวัน' },
+  { icon: '📍', title: 'เจ้าถิ่นภูเก็ต', desc: 'รู้จักพื้นที่และเส้นทางทั่วเกาะ เข้าหน้างานยากแค่ไหนก็จัดได้' },
+];
+
+const homeFaqs = [
+  { q: 'ภูเก็ตนักยกให้บริการอะไรบ้าง?', a: 'ให้เช่าเครน รถ 6 ล้อติดเครน (เฮี๊ยบ) แบคโฮ ตู้คอนเทนเนอร์ ขายหิน ดิน ทราย ดินถม และรับรื้อถอน-รับซื้อโครงสร้าง ครบจบในที่เดียว ไม่ต้องติดต่อหลายเจ้า' },
+  { q: 'รับงานพื้นที่ไหนบ้าง?', a: 'ให้บริการทั่วภูเก็ต ทั้งเมืองภูเก็ต กะทู้ ถลาง รัษฎา ป่าตอง ฉลอง เชิงทะเล และพื้นที่ใกล้เคียงอย่างพังงาและกระบี่ ส่วนงานรับรื้อถอนรับทั่วประเทศ' },
+  { q: 'คิดราคายังไง ประเมินหน้างานฟรีไหม?', a: 'ประเมินหน้างานให้ฟรี คิดราคาตามลักษณะงาน ขนาดเครื่องจักร และระยะทาง โทรหรือทัก LINE ปรึกษาได้ทุกวัน' },
+  { q: 'ติดต่อภูเก็ตนักยกได้ทางไหนบ้าง?', a: `โทร ${SITE.phoneDisplay} หรือ LINE ${SITE.lineId} เปิดบริการ${SITE.hours} พร้อมออกงานทุกวัน` },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      name: SITE.name,
+      alternateName: 'Phuket Nukyok',
+      legalName: SITE.company,
+      url: SITE.url,
+      telephone: '+66' + SITE.phone.slice(1),
+      description: SITE.description,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '111/39 ถ.ประชาสามัคคี ม.5 ต.รัษฎา',
+        addressLocality: 'อ.เมือง',
+        addressRegion: 'ภูเก็ต',
+        postalCode: '83000',
+        addressCountry: 'TH',
+      },
+      areaServed: SITE.serviceAreas.map((a) => ({ '@type': 'Place', name: a })),
+      openingHours: 'Mo-Su 07:00-19:00',
+      sameAs: [SITE.facebook],
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: homeFaqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
+---
+
+<Base
+  title="ภูเก็ตนักยก - เช่าเครน รถเฮี๊ยบ แบคโฮ ตู้คอนเทนเนอร์ รับรื้อถอน"
+  description="ภูเก็ตนักยก ให้เช่าเครน รถเฮี๊ยบ แบคโฮ ตู้คอนเทนเนอร์ ขายหิน ดิน ทราย และรับรื้อถอน ทั่วภูเก็ต พร้อมคนขับ ประเมินหน้างานฟรี โทร/LINE ทุกวัน"
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div class="grid">
+      <div>
+        <div class="badge u1">ให้เช่าเครื่องจักรหนัก · ภูเก็ต</div>
+        <h1 class="u2">เช่าเครน รถ 6 ล้อ แบคโฮ<br />ครบ จบที่เดียว</h1>
+        <p class="lead u3">{SITE.description}</p>
+        <div class="actions u4">
+          <a href={`tel:${SITE.phone}`} class="btn btn-amber"><span class="sweep"></span>📞 โทร {SITE.phoneDisplay}</a>
+          <a href={SITE.lineUrl} class="btn btn-line">💬 ทัก LINE</a>
+        </div>
+      </div>
+      <img class="photo u3" src="/images/hero-crane.jpg" alt="เครนกำลังทำงานที่หน้างานในภูเก็ต" width="2048" height="1152" fetchpriority="high" decoding="async" />
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="inner">
+      {trust.map((t) => <span>✓ {t}</span>)}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>บริการของเรา</h2>
+      <p>เครื่องจักรพร้อม คนขับชำนาญ ราคายุติธรรม</p>
+    </div>
+    <div class="grid3">
+      {cards.map((c) => (
+        <a class="card" href={c.href}>
+          <img src={c.img} alt={c.alt} loading="lazy" />
+          <div class="body">
+            <h3>{c.title}</h3>
+            <p>{c.desc}</p>
+            <span class="more">ดูรายละเอียด →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-grid">
+      {stats.map((s) => (
+        <div class="stats-item">
+          <div class="stats-num"><span data-count={s.n} data-suffix={s.suffix}>0</span></div>
+          <div class="stats-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="inner">
+      {whyUs.map((w) => (
+        <div>
+          <div class="icon">{w.icon}</div>
+          <h3>{w.title}</h3>
+          <p>{w.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section faq-section">
+    <div class="section-head">
+      <h2>คำถามที่พบบ่อย</h2>
+      <p>เรื่องเช่าเครน แบคโฮ รถเฮี๊ยบ ตู้คอนเทนเนอร์ วัสดุถมที่ และงานรื้อถอน</p>
+    </div>
+    <div class="faq" style="margin:0 auto">
+      {homeFaqs.map((f) => (
+        <details class="faq-item">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>มีงานยก งานขุด งานขนส่ง?</h2>
+    <p>โทรปรึกษาฟรี ประเมินหน้างาน เสนอราคาไว</p>
+    <div class="actions">
+      <a href={`tel:${SITE.phone}`} class="btn btn-amber">📞 {SITE.phoneDisplay}</a>
+      <a href={SITE.lineUrl} class="btn btn-ghost-line">💬 LINE: {SITE.lineId}</a>
+    </div>
+  </section>
+</Base>
