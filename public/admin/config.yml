@@ -2,7 +2,7 @@
 # Production: ตั้ง repo ให้ตรง GitHub repo จริง แล้ว deploy (ดู README)
 backend:
   name: github
-  repo: OWNER/REPO # << แก้เป็น your-github-user/phuketnukyok.com หลังสร้าง repo
+  repo: siwakornkw-stack/phuketnukyok.com
   branch: main
 
 # ใช้เขียนบทความบนเครื่อง (npx @sveltia/cms-proxy-server + npm run dev แล้วเปิด /admin)
