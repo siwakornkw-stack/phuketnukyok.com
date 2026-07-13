@@ -6,8 +6,13 @@ export const SITE = {
   company: 'บริษัท เทวาวณิชกิจ จำกัด',
   address: '111/39 ถ.ประชาสามัคคี ม.5 ต.รัษฎา อ.เมือง จ.ภูเก็ต 83000',
   url: 'https://phuketnukyok.com',
-  phone: '0826532332',
+  phone: '0826532332', // primary (used in all CTA / tel: links)
   phoneDisplay: '082-653-2332',
+  phones: [
+    { display: '082-653-2332', tel: '0826532332', label: 'มือถือ' },
+    { display: '095-101-3337', tel: '0951013337', label: 'มือถือ' },
+    { display: '076-632332', tel: '076632332', label: 'สำนักงาน' },
+  ],
   lineId: '@phuketnukyok',
   lineUrl: 'https://line.me/R/ti/p/@phuketnukyok',
   facebook: 'https://www.facebook.com/PhuketNukyok',

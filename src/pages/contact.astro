@@ -72,6 +72,12 @@ const jsonLd = {
         </a>
       </div>
       <div class="contact-info">
+        <div class="head">เบอร์ติดต่อ</div>
+        {SITE.phones.map((p) => (
+          <div><a href={`tel:${p.tel}`}>{p.display}</a> <span style="color:var(--gray2)">· {p.label}</span></div>
+        ))}
+      </div>
+      <div class="contact-info">
         <div class="head">ที่อยู่</div>
         {SITE.company}<br />{SITE.address}
       </div>

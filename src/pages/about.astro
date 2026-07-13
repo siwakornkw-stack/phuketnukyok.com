@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+import { fleetStats } from '../data/fleet';
+
+const stats = [
+  { n: 30, suffix: '+', label: 'โครงการที่ส่งมอบ' },
+  { n: 100, suffix: '%', label: 'ประเมินความเสี่ยงงาน' },
+  { n: fleetStats.coreMachines, suffix: '', label: 'เครื่องจักรของบริษัท' },
+  { n: fleetStats.brands, suffix: '', label: 'แบรนด์ชั้นนำ' },
+];
+
+const scope = ['รื้อถอน / ทุบตึก', 'เคลียร์พื้นที่', 'ถมดิน', 'งานถนน', 'ระบบระบายน้ำ', 'เสาเข็ม', 'งานบ่อ'];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'AboutPage',
+      name: 'เกี่ยวกับ ภูเก็ตนักยก',
+      url: `${SITE.url}/about`,
+    },
+    {
+      '@type': 'Organization',
+      name: SITE.name,
+      legalName: SITE.company,
+      url: SITE.url,
+      telephone: '+66' + SITE.phone.slice(1),
+      sameAs: [SITE.facebook],
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'เกี่ยวกับเรา', item: `${SITE.url}/about` },
+      ],
+    },
+  ],
+};
+---
+
+<Base
+  title="เกี่ยวกับเรา - บริษัท เทวาวณิชกิจ จำกัด (ภูเก็ตนักยก) รื้อถอน งานดิน ภูเก็ต"
+  description="บริษัท เทวาวณิชกิจ จำกัด แบรนด์ภูเก็ตนักยก — ผู้รับเหมางานหนักในภูเก็ต เชี่ยวชาญรื้อถอนอาคาร งานดิน เตรียมพื้นที่ พร้อมเครื่องจักร 38 คันและทีมงานมืออาชีพ 30+ โครงการ"
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>เกี่ยวกับ ภูเก็ตนักยก</h1>
+      <p>บริษัท เทวาวณิชกิจ จำกัด · สร้างภูเก็ตจากพื้นดินขึ้นมา</p>
+    </div>
+  </section>
+
+  <section class="section" style="max-width:900px">
+    <p style="font-size:18px;line-height:1.9;color:#333;margin:0 0 20px">
+      <strong>บริษัท เทวาวณิชกิจ จำกัด</strong> (THEVAWANICHAKIT CO., LTD.) ดำเนินงานภายใต้แบรนด์
+      <strong>"ภูเก็ตนักยก"</strong> — ผู้รับเหมางานหนักในภูเก็ต เชี่ยวชาญด้านรื้อถอนอาคาร งานดิน
+      และบริการเครื่องจักรหนักพร้อมคนขับ
+    </p>
+    <p style="font-size:17px;line-height:1.9;color:#5C5C5C;margin:0">
+      ตั้งแต่งานรื้อถอนและเคลียร์พื้นที่ ไปจนถึงถมดิน งานถนน ระบบระบายน้ำ เสาเข็ม และงานบ่อ
+      เราเตรียมพื้นที่อย่างปลอดภัย รวดเร็ว และแม่นยำ ให้กับโครงการบ้าน รีสอร์ท และโครงสร้างพื้นฐานสำคัญของเกาะภูเก็ต
+      ด้วยเครื่องจักรทันสมัยและทีมงานมืออาชีพ
+    </p>
+  </section>
+
+  <section class="stats">
+    <div class="stats-grid">
+      {stats.map((s) => (
+        <div class="stats-item">
+          <div class="stats-num"><span data-count={s.n} data-suffix={s.suffix}>0</span></div>
+          <div class="stats-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="inner" style="grid-template-columns:1fr 1fr">
+      <div>
+        <div class="icon">🎯</div>
+        <h3>วิสัยทัศน์</h3>
+        <p>เป็นพาร์ทเนอร์ที่ภูเก็ตไว้วางใจที่สุดด้านงานรื้อถอนและงานดิน ตั้งมาตรฐานความปลอดภัยและตรงเวลาให้กับการเตรียมพื้นที่บนเกาะ</p>
+      </div>
+      <div>
+        <div class="icon">🛠️</div>
+        <h3>พันธกิจ</h3>
+        <p>ส่งมอบทุกงานอย่างปลอดภัยและตรงกำหนด ด้วยเครื่องจักรทันสมัยที่บำรุงรักษาอย่างดี และทีมงานที่ชำนาญ</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="max-width:900px">
+    <h2 style="font-size:24px;margin:0 0 16px">ขอบเขตงานของเรา</h2>
+    <div class="fleet-brands">
+      {scope.map((s) => <span class="brand-chip">{s}</span>)}
+    </div>
+    <p style="margin-top:20px">
+      ดู<a href="/fleet">รถและเครื่องจักรทั้งหมด</a> · <a href="/services">บริการทั้งหมด</a> · <a href="/works">ผลงานจริง</a>
+    </p>
+  </section>
+
+  <section class="cta">
+    <h2>มีงานรื้อถอน งานดิน งานยกในภูเก็ต?</h2>
+    <p>โทรปรึกษาฟรี ประเมินหน้างาน เสนอราคาไว</p>
+    <div class="actions">
+      <a href={`tel:${SITE.phone}`} class="btn btn-amber">📞 {SITE.phoneDisplay}</a>
+      <a href={SITE.lineUrl} class="btn btn-ghost-line">💬 LINE: {SITE.lineId}</a>
+    </div>
+  </section>
+</Base>
