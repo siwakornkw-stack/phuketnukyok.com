@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+import { fleetStats, fleetBrands, fleetCategories } from '../data/fleet';
+
+const stats = [
+  { n: fleetStats.coreMachines, suffix: '', label: 'เครื่องจักรหลัก' },
+  { n: 16, suffix: '', label: 'รถขุด/แบคโฮ' },
+  { n: fleetStats.brands, suffix: '', label: 'แบรนด์ชั้นนำ' },
+  { n: 25, suffix: 'T', label: 'เครนสูงสุด (ตัน)' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'CollectionPage',
+      name: 'รถและเครื่องจักร — ภูเก็ตนักยก',
+      url: `${SITE.url}/fleet`,
+      description: 'ฟลีตเครื่องจักรของภูเก็ตนักยก 38 คัน 13 แบรนด์ เครน แบคโฮ รถบรรทุก รถบด พร้อมคนขับ',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'หน้าแรก', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'รถและเครื่องจักร', item: `${SITE.url}/fleet` },
+      ],
+    },
+  ],
+};
+---
+
+<Base
+  title="รถและเครื่องจักรของเรา - เครน แบคโฮ รถบรรทุก รถบด ภูเก็ต | ภูเก็ตนักยก"
+  description="ฟลีตเครื่องจักรภูเก็ตนักยก (เทวาวณิชกิจ) 38 คัน 13 แบรนด์ — เครน 25 ตัน TADANO, แบคโฮ PC35-PC215 (CAT/KOMATSU/KOBELCO/SANY), รถ 6-10 ล้อ HINO, รถบด SAKAI พร้อมคนขับ"
+  jsonLd={jsonLd}
+>
+  <section class="page-hero">
+    <div class="container">
+      <h1>รถและเครื่องจักรของเรา</h1>
+      <p>ฟลีตครบวงจร เป็นของบริษัทเอง พร้อมคนขับมืออาชีพ — ออกงานได้ทันที</p>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats-grid">
+      {stats.map((s) => (
+        <div class="stats-item">
+          <div class="stats-num"><span data-count={s.n} data-suffix={s.suffix}>0</span></div>
+          <div class="stats-label">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="fleet-brands">
+      <span class="fleet-brands-label">แบรนด์ที่ใช้งาน</span>
+      {fleetBrands.map((b) => <span class="brand-chip">{b}</span>)}
+    </div>
+
+    <div class="fleet-grid">
+      {fleetCategories.map((c) => (
+        <div class="fleet-cat">
+          <h2>{c.name} <span class="fleet-count">{c.count} คัน</span></h2>
+          <ul class="fleet-list">
+            {c.items.map((it) => (
+              <li>
+                <strong>{it.type}</strong>
+                <span class="fleet-model">{it.model}{it.qty > 1 ? ` · ${it.qty} คัน` : ''}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <p class="fleet-note">
+      หมายเหตุ: รายการเครื่องจักรเป็นของบริษัท เทวาวณิชกิจ จำกัด (ภูเก็ตนักยก) ทุกคันพร้อมคนขับและทีมงานมืออาชีพ
+    </p>
+  </section>
+
+  <section class="cta">
+    <h2>ต้องการเช่าเครื่องจักรในภูเก็ต?</h2>
+    <p>เลือกรุ่นที่เหมาะกับงาน โทรปรึกษาฟรี ประเมินหน้างานไว</p>
+    <div class="actions">
+      <a href={`tel:${SITE.phone}`} class="btn btn-amber">📞 {SITE.phoneDisplay}</a>
+      <a href={SITE.lineUrl} class="btn btn-ghost-line">💬 LINE: {SITE.lineId}</a>
+    </div>
+  </section>
+</Base>
