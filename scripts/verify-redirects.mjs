@@ -14,23 +14,32 @@ const OLD = 'https://nukyok.com';
 
 // Old-domain paths that are still indexed. Sourced from SERP results for the old
 // site. Add any others you know of - the old CMS had pages this list may miss.
+// [old path, page it must end on]. Checking only for a 200 is not enough: while
+// nukyok.com still points at Wix, its catch-all drops the path and everything
+// lands on the home page - which is a 200, and would pass a status-only check
+// while the migration is still broken.
+const th = (s) => '/' + encodeURIComponent(s).replace(/%2D/g, '-') + '/';
 const OLD_PATHS = [
-  '/cha-crane-phuket/',
-  '/crane-rental-phuket/',
-  '/backhoe-rental-phuket/',
-  '/land-filling-phuket/',
-  '/area-adjustment-phuket/',
-  '/construction-equipment-rental-phuket/',
-  '/container-rental-and-sale-phuket/',
-  '/phuket-road-roller-rental/',
-  '/pipe-laying-service/',
-  '/demolition-thalang-phuketnakyok/',
-  '/service/',
-  '/about-us/',
-  '/contact/',
-  '/' + encodeURIComponent('บริการ') + '/',
-  '/' + encodeURIComponent('ให้เช่ารถเครน-ภูเก็ต').replace(/%2D/g, '-') + '/',
-  '/' + encodeURIComponent('รับรื้อถอนภูเก็ต') + '/',
+  ['/cha-crane-phuket/', '/services/crane'],
+  ['/crane-rental-phuket/', '/services/crane'],
+  [th('ให้เช่ารถเครน-ภูเก็ต'), '/services/crane'],
+  ['/backhoe-rental-phuket/', '/services/backhoe'],
+  ['/pipe-laying-service/', '/services/backhoe'],
+  ['/area-adjustment-phuket/', '/services/backhoe'],
+  ['/land-filling-phuket/', '/services/materials'],
+  [th('ขายหินจังหวัดภูเก็ต'), '/services/materials'],
+  ['/demolition-thalang-phuketnakyok/', '/services/demolition'],
+  [th('รับรื้อถอนภูเก็ต'), '/services/demolition'],
+  ['/container-rental-and-sale-phuket/', '/services/container'],
+  ['/road-construction-contractor-phuket/', '/services/road'],
+  [th('รับสร้างถนนภูเก็ต'), '/services/road'],
+  ['/phuket-road-roller-rental/', '/fleet'],
+  [th('ผลงานรื้อถอน'), '/works'],
+  ['/construction-equipment-rental-phuket/', '/services'],
+  ['/service/', '/services'],
+  [th('บริการ'), '/services'],
+  ['/about-us/', '/about'],
+  ['/contact/', '/contact'],
 ];
 
 const hit = async (url) => {
@@ -45,9 +54,21 @@ const report = (ok, label, detail) => {
 };
 
 console.log('--- old domain -> new site (full chain) ---');
-for (const p of OLD_PATHS) {
+let toHome = 0;
+for (const [p, want] of OLD_PATHS) {
   const { status, final } = await hit(OLD + p);
-  report(status === 200, `${OLD}${p}`, status === 200 ? '' : `${status} at ${decodeURI(final)}`);
+  const landed = new URL(final).pathname.replace(/\/$/, '') || '/';
+  const ok = status === 200 && landed === want;
+  if (ok) {
+    report(true, `${decodeURI(p)} -> ${want}`);
+  } else {
+    if (landed === '/') toHome++;
+    report(false, decodeURI(p), `want ${want}, got ${status} ${decodeURI(landed)}`);
+  }
+}
+if (toHome) {
+  console.log(`\n  ${toHome} landed on the home page - nukyok.com is still on Wix,`);
+  console.log(`  whose catch-all drops the path. Point its A record at 76.76.21.21.`);
 }
 
 console.log('\n--- vercel.json rules, both encoding cases ---');
