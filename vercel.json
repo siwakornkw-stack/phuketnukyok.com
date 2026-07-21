@@ -2,473 +2,995 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "redirects": [
     {
-      "source": "/about-us",
-      "destination": "/",
+      "source": "/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/about-us/",
-      "destination": "/",
+      "source": "/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/contact-us",
-      "destination": "/contact",
+      "source": "/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/contact-us/",
-      "destination": "/contact",
-      "permanent": true
-    },
-    {
-      "source": "/gallery",
-      "destination": "/works",
-      "permanent": true
-    },
-    {
-      "source": "/gallery/",
-      "destination": "/works",
+      "source": "/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/crane",
-      "permanent": true
-    },
-    {
-      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/crane",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/crane",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/crane",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/crane",
+      "source": "/%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/crane",
+      "source": "/%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/crane",
+      "source": "/%e0%b8%ad%e0%b8%b8%e0%b8%95%e0%b8%aa%e0%b8%b2%e0%b8%ab%e0%b8%81%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/crane",
+      "source": "/%e0%b8%ad%e0%b8%b8%e0%b8%95%e0%b8%aa%e0%b8%b2%e0%b8%ab%e0%b8%81%e0%b8%a3%e0%b8%a3%e0%b8%a1%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B2-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88",
-      "destination": "/services/crane",
+      "source": "/cha-crane-phuket",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9e%e0%b8%b1%e0%b8%87%e0%b8%87%e0%b8%b2-%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%b5%e0%b9%88",
-      "destination": "/services/crane",
+      "source": "/cha-crane-phuket/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B2-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88/",
-      "destination": "/services/crane",
+      "source": "/crane-rental-phuket",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9e%e0%b8%b1%e0%b8%87%e0%b8%87%e0%b8%b2-%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%b5%e0%b9%88/",
-      "destination": "/services/crane",
+      "source": "/crane-rental-phuket/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/backhoe",
+      "source": "/backhoe-crane-rental-thalang",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/backhoe",
+      "source": "/backhoe-crane-rental-thalang/",
+      "destination": "https://phuketnukyok.com/services/crane",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/backhoe",
+      "source": "/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/backhoe",
+      "source": "/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/blog/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96-6-%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/truck-crane",
+      "source": "/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/blog/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96-6-%e0%b8%a5%e0%b9%89%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/truck-crane",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96-6-%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/truck-crane",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96-6-%e0%b8%a5%e0%b9%89%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/truck-crane",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%97%e0%b8%a3%e0%b8%b2%e0%b8%a2-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%97%e0%b8%a3%e0%b8%b2%e0%b8%a2-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89-vip-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89-vip-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%99%e0%b8%b3%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89-vip-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89-vip-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%99%e0%b8%b3%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-/",
-      "destination": "/services/materials",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-/",
-      "destination": "/services/demolition",
-      "permanent": true
-    },
-    {
-      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/container",
-      "permanent": true
-    },
-    {
-      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/container",
-      "permanent": true
-    },
-    {
-      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/container",
-      "permanent": true
-    },
-    {
-      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/container",
+      "source": "/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/%E0%B8%96%E0%B8%A1%E0%B8%94%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/materials",
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/%E0%B8%96%E0%B8%A1%E0%B8%94%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/materials",
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%9A%E0%B8%84%E0%B9%82%E0%B8%AE%E0%B8%96%E0%B8%A5%E0%B8%B2%E0%B8%87/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/%e0%b8%96%e0%b8%a1%e0%b8%94%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/materials",
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae%e0%b8%96%e0%b8%a5%e0%b8%b2%e0%b8%87",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
-      "source": "/%e0%b8%96%e0%b8%a1%e0%b8%94%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/materials",
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%9a%e0%b8%84%e0%b9%82%e0%b8%ae%e0%b8%96%e0%b8%a5%e0%b8%b2%e0%b8%87/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%84%E0%B8%A3",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%81%E0%B8%A1%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%84%E0%B8%A3/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%a1%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%84%e0%b8%a3",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%81%e0%b8%a1%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%84%e0%b8%a3/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%84%e0%b8%a5%e0%b8%b5%e0%b8%a2%e0%b8%a3%e0%b9%8c%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%84%e0%b8%a5%e0%b8%b5%e0%b8%a2%e0%b8%a3%e0%b9%8c%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%84%e0%b8%a5%e0%b8%b5%e0%b8%a2%e0%b8%a3%e0%b9%8c%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%84%e0%b8%a5%e0%b8%b5%e0%b8%a2%e0%b8%a3%e0%b9%8c%e0%b8%a3%e0%b8%b4%e0%b9%88%e0%b8%87%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/materials",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/materials",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b8%9b%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/materials",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b8%9b%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%9e%e0%b8%b7%e0%b9%89%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/materials",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%E0%B8%A7%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B9%88%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b8%a7%e0%b8%b2%e0%b8%87%e0%b8%97%e0%b9%88%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
       "permanent": true
     },
     {
       "source": "/%e0%b8%a7%e0%b8%b2%e0%b8%87%e0%b8%97%e0%b9%88%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/backhoe",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/backhoe-rental-phuket",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/backhoe-rental-phuket/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/excavator-rental-phangnga",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/excavator-rental-phangnga/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/area-adjustment-phuket",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/area-adjustment-phuket/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/land-clearing-phuket",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/land-clearing-phuket/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/pipe-laying-service",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/pipe-laying-service/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/pipe-installation-thalang-phuketnakyok",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/pipe-installation-thalang-phuketnakyok/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%B4%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%ab%e0%b8%b4%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%ab%e0%b8%b4%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%AB%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%ab%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%ab%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%96%E0%B8%A1%E0%B8%94%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%96%E0%B8%A1%E0%B8%94%E0%B8%B4%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%96%e0%b8%a1%e0%b8%94%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%96%e0%b8%a1%e0%b8%94%e0%b8%b4%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/land-filling-phuket",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/land-filling-phuket/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/sell-construction-and-decorative-stones",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/sell-construction-and-decorative-stones/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
       "permanent": true
     },
     {
       "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
-      "destination": "/services/demolition",
+      "destination": "https://phuketnukyok.com/services/demolition",
       "permanent": true
     },
     {
       "source": "/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
-      "destination": "/services/demolition",
+      "destination": "https://phuketnukyok.com/services/demolition",
       "permanent": true
     },
     {
       "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
-      "destination": "/services/demolition",
+      "destination": "https://phuketnukyok.com/services/demolition",
       "permanent": true
     },
     {
       "source": "/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
-      "destination": "/services/demolition",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/building-demolition-phuket",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/building-demolition-phuket/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/demolition-thalang-phuketnakyok",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/demolition-thalang-phuketnakyok/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2-%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%82%E0%B8%B2%E0%B8%A2-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2-%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C/",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2-%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2-%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%82%e0%b8%b2%e0%b8%a2-%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2-%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c/",
+      "destination": "https://phuketnukyok.com/services/container",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81",
-      "destination": "/services/container",
+      "destination": "https://phuketnukyok.com/services/container",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81/",
-      "destination": "/services/container",
+      "destination": "https://phuketnukyok.com/services/container",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81",
-      "destination": "/services/container",
+      "destination": "https://phuketnukyok.com/services/container",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81/",
-      "destination": "/services/container",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%84%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%97%e0%b8%99%e0%b9%80%e0%b8%99%e0%b8%ad%e0%b8%a3%e0%b9%8c-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/container-rental-and-sale-phuket",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/container-rental-and-sale-phuket/",
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96-6-%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96-6-%E0%B8%A5%E0%B9%89%E0%B8%AD-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96-6-%e0%b8%a5%e0%b9%89%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%83%e0%b8%ab%e0%b9%89%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96-6-%e0%b8%a5%e0%b9%89%e0%b8%ad-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b8%88%e0%b8%b1%e0%b8%81%e0%b8%a3%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%b7%e0%b9%88%e0%b8%ad%e0%b8%87%e0%b8%88%e0%b8%b1%e0%b8%81%e0%b8%a3%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/service",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/service/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/service-detail",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/service-detail/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/construction-equipment-rental-phuket",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/construction-equipment-rental-phuket/",
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/phuket-road-roller-rental",
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/phuket-road-roller-rental/",
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%9C%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99",
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/%E0%B8%9C%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99/",
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%9c%e0%b8%a5%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99",
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/%e0%b8%9c%e0%b8%a5%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99/",
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/gallery",
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/gallery/",
+      "destination": "https://phuketnukyok.com/works",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%A3%E0%B8%B2",
-      "destination": "/about",
+      "destination": "https://phuketnukyok.com/about",
       "permanent": true
     },
     {
       "source": "/%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%A3%E0%B8%B2/",
-      "destination": "/about",
+      "destination": "https://phuketnukyok.com/about",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%81%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a3%e0%b8%b2",
-      "destination": "/about",
+      "destination": "https://phuketnukyok.com/about",
       "permanent": true
     },
     {
       "source": "/%e0%b9%80%e0%b8%81%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%81%e0%b8%b1%e0%b8%9a%e0%b9%80%e0%b8%a3%e0%b8%b2/",
-      "destination": "/about",
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "https://phuketnukyok.com/about",
       "permanent": true
     },
     {
       "source": "/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A3%E0%B8%B2",
-      "destination": "/contact",
+      "destination": "https://phuketnukyok.com/contact",
       "permanent": true
     },
     {
       "source": "/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%A3%E0%B8%B2/",
-      "destination": "/contact",
+      "destination": "https://phuketnukyok.com/contact",
       "permanent": true
     },
     {
       "source": "/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b9%88%e0%b8%ad%e0%b9%80%e0%b8%a3%e0%b8%b2",
-      "destination": "/contact",
+      "destination": "https://phuketnukyok.com/contact",
       "permanent": true
     },
     {
       "source": "/%e0%b8%95%e0%b8%b4%e0%b8%94%e0%b8%95%e0%b9%88%e0%b8%ad%e0%b9%80%e0%b8%a3%e0%b8%b2/",
-      "destination": "/contact",
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B2-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9E%E0%B8%B1%E0%B8%87%E0%B8%87%E0%B8%B2-%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B5%E0%B9%88/",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9e%e0%b8%b1%e0%b8%87%e0%b8%87%e0%b8%b2-%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%b5%e0%b9%88",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%80%e0%b8%84%e0%b8%a3%e0%b8%99%e0%b9%83%e0%b8%99%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9e%e0%b8%b1%e0%b8%87%e0%b8%87%e0%b8%b2-%e0%b8%81%e0%b8%a3%e0%b8%b0%e0%b8%9a%e0%b8%b5%e0%b9%88/",
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B9%81%E0%B8%9A%E0%B9%87%E0%B8%84%E0%B9%82%E0%B8%AE-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b9%81%e0%b8%9a%e0%b9%87%e0%b8%84%e0%b9%82%e0%b8%ae-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%82%E0%B8%B2%E0%B8%A2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%97%e0%b8%a3%e0%b8%b2%e0%b8%a2-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%82%e0%b8%b2%e0%b8%a2%e0%b8%97%e0%b8%a3%e0%b8%b2%e0%b8%a2-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%96%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88-/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b1%e0%b8%9a%e0%b8%96%e0%b8%a1%e0%b8%97%e0%b8%b5%e0%b9%88-/",
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%B7%E0%B9%89%E0%B8%AD%E0%B8%96%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%A3-%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B8%E0%B8%9A%E0%B8%95%E0%B8%B6%E0%B8%81-/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%b7%e0%b9%89%e0%b8%ad%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%84%e0%b8%b2%e0%b8%a3-%e0%b8%87%e0%b8%b2%e0%b8%99%e0%b8%97%e0%b8%b8%e0%b8%9a%e0%b8%95%e0%b8%b6%e0%b8%81-/",
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b9%80%e0%b8%8a%e0%b9%88%e0%b8%b2%e0%b8%a3%e0%b8%96%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89-vip-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89-vip-%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95-%E0%B8%9A%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%95%E0%B8%B9%E0%B9%89%E0%B8%99%E0%B8%B3%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7%E0%B8%A0%E0%B8%B9%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%95/",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89-vip-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%99%e0%b8%b3%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89-vip-%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95-%e0%b8%9a%e0%b8%a3%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3%e0%b8%a3%e0%b8%96%e0%b8%95%e0%b8%b9%e0%b9%89%e0%b8%99%e0%b8%b3%e0%b9%80%e0%b8%97%e0%b8%b5%e0%b9%88%e0%b8%a2%e0%b8%a7%e0%b8%a0%e0%b8%b9%e0%b9%80%e0%b8%81%e0%b9%87%e0%b8%95/",
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/:path*",
       "permanent": true
     }
   ],
