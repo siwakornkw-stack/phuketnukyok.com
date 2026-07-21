@@ -60,6 +60,11 @@ const LEGACY = {
   '/เช่าตู้คอนเทนเนอร์-ภูเก็ต': '/services/container',
   '/container-rental-and-sale-phuket': '/services/container',
 
+  // road works
+  '/รับสร้างถนนภูเก็ต': '/services/road',
+  '/ทำถนน-ภูเก็ต': '/services/road',
+  '/road-construction-contractor-phuket': '/services/road',
+
   // truck crane
   '/blog/ให้เช่ารถ-6-ล้อ-ภูเก็ต': '/services/truck-crane',
 
@@ -94,6 +99,54 @@ const LEGACY = {
   '/blog/เช่ารถภูเก็ต': '/',
   '/blog/รถตู้-vip-ภูเก็ต-บริการรถตู้นำเที่ยวภูเก็ต': '/',
 };
+
+// WordPress tag and category archives. These were indexed too, and each maps
+// cleanly onto one service. Slugs marked (cut) were truncated mid-word by
+// WordPress, so they are stored exactly as they appeared, not as they read.
+const ARCHIVES = {
+  '/services/crane': [
+    '/category/เช่าเครน', '/tag/เช่าเครน', '/tag/เช่าเครนภูเก็ต',
+    '/tag/เช่าเครนก่อสร้าง', '/tag/เครนยกของ', '/tag/เครนเล็กภูเก็ต',
+  ],
+  '/services/backhoe': [
+    '/category/เช่าแบคโฮ', '/category/เช่าแมคโคร', '/category/เคลียร์ริ่ง',
+    '/tag/เช่าแบคโฮ', '/tag/เช่าแบคโฮภูเก็ต', '/tag/เช่าแบคโฮพังงา',
+    '/tag/เช่าแบคโฮ-ถลาง', '/tag/เช่าแบค', '/tag/เช่าแมคโคร',
+    '/tag/เช่ารถแทรกเตอร์ภูเก็ต', '/tag/เคลียร์ริ่ง', '/tag/เคลียร์พื้นที่',
+    '/tag/เคลียร์พื้นที่ภูเก็ต', '/tag/รับเคลียร์ริ่ง',
+    '/tag/รับเคลียร์พื้นที่ดินภู', '/tag/รับเคลียร์ริ่งพื้นที่ภ',
+    '/tag/เคลียร์พื้นที่พร้อมถมด', '/tag/บริการปรับพื้นที่ภูเก็',
+    '/tag/วางท่อ', '/tag/รับวางท่อ', '/tag/รับวางท่อ-ภูเก็ต',
+    '/tag/ผู้รับเหมาวางท่อ', '/tag/ผู้รับเหมาวางท่อ-ภูเก็ต',
+    '/tag/รับเหมาวางระบบท่อ', '/tag/ทีมวางท่อ-ภูเก็ต',
+    '/tag/ช่างวางท่อมืออาชีพ-ภูเก', '/tag/วางท่อระบายน้ำ-ภูเก็ต',
+  ],
+  '/services/materials': [
+    '/category/รับถมดิน', '/tag/ถมดิน', '/tag/ถมดินภูเก็ต',
+    '/tag/งานถมดิน', '/tag/บริการถมดินภูเก็ต', '/tag/ถมดินสร้างบ้านภูเก็ต',
+    '/tag/ถมดินสร้างอาคาร',
+  ],
+  '/services/demolition': [
+    '/category/รื้อถอนภูเก็ต', '/tag/รื้อถอนภูเก็ต', '/tag/งานรื้อถอน',
+    '/tag/งานรื้อถอนบ้าน', '/tag/งานรื้อถอนบ้านภูเก็ต',
+    '/tag/ทุบอาคารภูเก็ต', '/tag/รับเหมาทุบบ้าน', '/tag/รับเหมาทุบบ้านภูเก็ต',
+  ],
+  '/services/road': [
+    '/category/รับทำถนน', '/tag/รับทำถนน', '/tag/รับทำถนนภูเก็ต',
+    '/tag/ทำถนน', '/tag/งานถนน', '/tag/งานถนนครบวงจร', '/tag/รับเทถนน',
+    '/tag/ถนนคอนกรีตภูเก็ต', '/tag/ถนนลาดยางภูเก็ต',
+  ],
+  '/services': [
+    '/category/เช่าเครื่องจักร', '/tag/เช่าเครื่องจักร',
+    '/tag/เช่าเครื่องจักรภูเก็ต', '/tag/เครื่องจักรก่อสร้าง',
+    '/tag/เช่ารถดั๊ม', '/tag/เช่ารถดั๊มภูเก็ต', '/tag/รับเหมาก่อสร้าง',
+  ],
+  '/blog': ['/category/บทความ'],
+};
+
+for (const [dest, paths] of Object.entries(ARCHIVES)) {
+  for (const p of paths) LEGACY[p] = dest;
+}
 
 // Encode a Thai path the way a browser does, keeping - and / literal.
 const enc = (p) =>
