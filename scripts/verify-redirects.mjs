@@ -52,7 +52,11 @@ for (const p of OLD_PATHS) {
 
 console.log('\n--- vercel.json rules, both encoding cases ---');
 const { redirects } = JSON.parse(readFileSync(new URL('../vercel.json', import.meta.url), 'utf8'));
-const sources = [...new Set(redirects.map((r) => r.source))];
+// Skip pattern rules (:path*) and host-scoped ones - they are not literal paths
+// and only fire for requests arriving on the old domain.
+const sources = [...new Set(
+  redirects.filter((r) => !r.has && !r.source.includes(':')).map((r) => r.source)
+)];
 for (const src of sources) {
   const { status, final } = await hit(NEW + src);
   report(status === 200, `${src.length > 60 ? decodeURI(src) : src}`, status === 200 ? '' : `${status} at ${decodeURI(final)}`);
