@@ -173,6 +173,43 @@ for (const [oldPath, newPath] of Object.entries(LEGACY)) {
   }
 }
 
+// Every real page, scoped to the old host. A dynamic catch-all (/:path*) loses
+// to the filesystem for paths that exist as built HTML, so nukyok.com/fleet/
+// would serve the page instead of redirecting - the whole site under two
+// domains. Explicit sources are matched before the filesystem check.
+const PAGES = [
+  '/',
+  '/about',
+  '/blog',
+  '/blog/backhoe-vs-macro',
+  '/blog/rent-crane-phuket',
+  '/blog/rue-thon-rakha',
+  '/blog/thom-thi-phuket-rakha',
+  '/contact',
+  '/fleet',
+  '/services',
+  '/services/backhoe',
+  '/services/container',
+  '/services/crane',
+  '/services/demolition',
+  '/services/materials',
+  '/services/road',
+  '/services/truck-crane',
+  '/works',
+];
+for (const host of ['nukyok.com', 'www.nukyok.com']) {
+  for (const p of PAGES) {
+    for (const src of new Set([p, p === '/' ? '/' : p + '/'])) {
+      redirects.push({
+        source: src,
+        has: [{ type: 'host', value: host }],
+        destination: CANONICAL + p,
+        permanent: true,
+      });
+    }
+  }
+}
+
 // Anything else arriving on the old host goes to the matching path on the
 // canonical host. Must stay last: it matches everything.
 redirects.push({

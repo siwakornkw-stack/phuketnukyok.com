@@ -2322,6 +2322,776 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/backhoe-vs-macro",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/backhoe-vs-macro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/backhoe-vs-macro/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/backhoe-vs-macro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-crane-phuket",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rent-crane-phuket",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-crane-phuket/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rent-crane-phuket",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rue-thon-rakha",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rue-thon-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rue-thon-rakha/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rue-thon-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/thom-thi-phuket-rakha",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/thom-thi-phuket-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/thom-thi-phuket-rakha/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/thom-thi-phuket-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/fleet",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/fleet/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/backhoe",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/services/backhoe/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/services/container",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/services/container/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/services/crane",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/crane/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/demolition",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/services/demolition/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/services/materials",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/services/materials/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/services/road",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/road",
+      "permanent": true
+    },
+    {
+      "source": "/services/road/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/road",
+      "permanent": true
+    },
+    {
+      "source": "/services/truck-crane",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/truck-crane/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/works",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/works/",
+      "has": [
+        {
+          "type": "host",
+          "value": "nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/about/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/about",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/backhoe-vs-macro",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/backhoe-vs-macro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/backhoe-vs-macro/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/backhoe-vs-macro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-crane-phuket",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rent-crane-phuket",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rent-crane-phuket/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rent-crane-phuket",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rue-thon-rakha",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rue-thon-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rue-thon-rakha/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/rue-thon-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/thom-thi-phuket-rakha",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/thom-thi-phuket-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/blog/thom-thi-phuket-rakha/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/blog/thom-thi-phuket-rakha",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/contact",
+      "permanent": true
+    },
+    {
+      "source": "/fleet",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/fleet/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/fleet",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services",
+      "permanent": true
+    },
+    {
+      "source": "/services/backhoe",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/services/backhoe/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/backhoe",
+      "permanent": true
+    },
+    {
+      "source": "/services/container",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/services/container/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/container",
+      "permanent": true
+    },
+    {
+      "source": "/services/crane",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/crane/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/demolition",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/services/demolition/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/demolition",
+      "permanent": true
+    },
+    {
+      "source": "/services/materials",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/services/materials/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/materials",
+      "permanent": true
+    },
+    {
+      "source": "/services/road",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/road",
+      "permanent": true
+    },
+    {
+      "source": "/services/road/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/road",
+      "permanent": true
+    },
+    {
+      "source": "/services/truck-crane",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/services/truck-crane/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/services/truck-crane",
+      "permanent": true
+    },
+    {
+      "source": "/works",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
+      "source": "/works/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nukyok.com"
+        }
+      ],
+      "destination": "https://phuketnukyok.com/works",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
