@@ -197,7 +197,7 @@ const PAGES = [
   '/services/truck-crane',
   '/works',
 ];
-for (const host of ['nukyok.com', 'www.nukyok.com']) {
+for (const host of ['nukyok.com', 'www.nukyok.com', 'www.phuketnukyok.com']) {
   for (const p of PAGES) {
     for (const src of new Set([p, p === '/' ? '/' : p + '/'])) {
       redirects.push({
@@ -221,6 +221,12 @@ redirects.push({
 redirects.push({
   source: '/:path*',
   has: [{ type: 'host', value: 'www.nukyok.com' }],
+  destination: `${CANONICAL}/:path*`,
+  permanent: true,
+});
+redirects.push({
+  source: '/:path*',
+  has: [{ type: 'host', value: 'www.phuketnukyok.com' }],
   destination: `${CANONICAL}/:path*`,
   permanent: true,
 });
