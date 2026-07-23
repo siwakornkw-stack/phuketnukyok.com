@@ -9,4 +9,5 @@ image-originals/
 # transient research/audit data dumps
 kw-research.json
 seo-audit-data.json
+seo-live-data.json
 _ac*.txt
